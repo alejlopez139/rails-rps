@@ -10,5 +10,9 @@ class ZebraController < ApplicationController
     @opp_hand = rand(1..3)
     render({:template => "game_templates/play_paper"})
   end
+  def scissors
+    @opp_hand = rand(1..3)
+    render({:template => "game_templates/play_scissors"})
+  end
 
 end
